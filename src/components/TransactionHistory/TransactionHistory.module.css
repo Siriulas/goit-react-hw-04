@@ -1,0 +1,33 @@
+.table {
+  font-size: 20px;
+  margin: auto 0px;
+  border-collapse: collapse;
+  text-transform: capitalize;
+  margin: 0 auto;
+}
+
+.table th {
+  color: white;
+  background-color: rgb(39, 38, 38);
+  border: 2px solid #1e1e1e;
+}
+
+.table tbody {
+  background-color: white;
+}
+
+.table tr:nth-child(2n) {
+  background-color: grey;
+}
+
+.table td {
+  width: 150px;
+  padding: 5px 12px;
+  text-align: center;
+  border: 2px solid #1e1e1e;
+  color: black;
+}
+
+.table .type {
+  text-align: center;
+}
