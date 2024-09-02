@@ -10,10 +10,16 @@ export default function ImageModal({ isOpen, onClose, largeImageURL }) {
       onRequestClose={onClose}
       className={css.modal}
       overlayClassName={css.overlay}
-    >css
-      <img src={largeImageURL} alt="" />
-      <button type="button" className={css.closeButton} onClick={onClose}>
-        Close
+      contentLabel="Image Modal" 
+    >
+      <img src={largeImageURL} alt="Enlarged view of the selected image" />
+      <button
+        type="button"
+        className={css.closeButton}
+        onClick={onClose}
+        aria-label="Close Modal" 
+      >
+        &times;
       </button>
     </Modal>
   );
